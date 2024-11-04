@@ -1,0 +1,69 @@
+.header-principal{
+    padding-top: 20px;
+    margin-bottom: 70px;
+    .container-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo-principal{
+            text-decoration: none;
+            font-family: $poppins;
+            font-weight: 600;
+            font-size: 28px;
+            color: $red;
+            span{
+                color: $yellow;
+                font-family: $poppins;
+                font-weight: 600;
+                font-size: 28px;
+            }
+        }
+        .menu-header{
+            ul{
+                display: flex;
+                gap: 45px;
+                a{
+                    font-size: 15px;
+                    text-decoration: none;
+                    color: $silver;
+                    padding-bottom: 5px;
+                    &:hover{
+                        color: $red;
+                        border-bottom: 2px solid $red;
+                    }
+                }
+            }
+        }
+        .login-register{
+            ul{
+                display: flex;
+                gap: 40px;
+                align-items: center;
+                a{
+                    font-size: 15px;
+                    text-decoration: none;
+                }
+                .shopping{
+                    position: relative;
+                    .icon-ball::after{
+                        position: absolute;
+                        content: (' ');
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 10px;
+                        background-color: $red;
+                    }
+                }
+                .no-button{
+                    color: $red;
+                    text-decoration: underline;
+                }
+                .button{
+                    @include button;
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,10 @@
+//mixin de botones
+@mixin button{
+    text-decoration: none;
+    color: $white-button;
+    background-color: $red;
+    display: inline-block;
+    width: max-content;
+    padding: 10px 30px;
+    border-radius: 10px;
+}
